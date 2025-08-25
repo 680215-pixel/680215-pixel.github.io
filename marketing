@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GitHub - Where the World Builds Software</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Where the world builds software</h1>
+      <p>Millions of developers and companies build, ship, and maintain their software on GitHub — the largest and most advanced development platform in the world.</p>
+      <a href="#" class="cta">Get started for free</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <h2>Everything you need to build</h2>
+      <div class="grid">
+        <div class="feature-card">
+          <h3>Collaboration</h3>
+          <p>Code together with pull requests, issues, and project boards.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Automation</h3>
+          <p>Automate your workflow with GitHub Actions.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Security</h3>
+          <p>Secure code from start to ship with built-in vulnerability scanning.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collaboration Section -->
+  <section class="collaboration">
+    <div class="container">
+      <h2>Built for teams of all sizes</h2>
+      <p>Whether you're a startup or an enterprise, GitHub empowers teams to work faster and smarter together.</p>
+      <img src="team-collaboration.svg" alt="Team working illustration"/>
+    </div>
+  </section>
+
+  <!-- Integrations Section -->
+  <section class="integrations">
+    <div class="container">
+      <h2>Works with your tools</h2>
+      <p>Connect GitHub with the apps and services your team already uses — Slack, Jira, VS Code, and thousands more.</p>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing">
+    <div class="container">
+      <h2>Choose your plan</h2>
+      <div class="pricing-options">
+        <div class="plan">
+          <h3>Free</h3>
+          <p>For individuals and hobbyists</p>
+          <p class="price">$0/month</p>
+        </div>
+        <div class="plan">
+          <h3>Team</h3>
+          <p>Advanced collaboration for teams</p>
+          <p class="price">$4/user/month</p>
+        </div>
+        <div class="plan">
+          <h3>Enterprise</h3>
+          <p>Security and compliance at scale</p>
+          <p class="price">Custom</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Join millions of developers on GitHub</h2>
+      <a href="#" class="cta">Sign up for free</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 GitHub, Inc.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
