@@ -3,96 +3,219 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GitHub - Where the World Builds Software</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="All-in-One Marketing App"/>
+  <title>Marketing Magic</title>
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --secondary: #6366f1;
+      --bg: #f9fafb;
+      --text: #111827;
+      --light-text: #6b7280;
+    }
+
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    header a {
+      background: white;
+      color: var(--primary);
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+
+    header a:hover {
+      background: #e0e7ff;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .features {
+      display: grid;
+      gap: 40px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .feature {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature h3 {
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    .testimonials {
+      background: white;
+      border-left: 5px solid var(--primary);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+    }
+
+    .testimonial-author {
+      font-weight: bold;
+      color: var(--primary);
+    }
+
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    form button {
+      margin-top: 15px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    form button:hover {
+      background: var(--secondary);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: var(--light-text);
+      font-size: 0.9rem;
+    }
+
+    /* Scroll animation */
+    [data-fade] {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-out;
+    }
+
+    [data-fade].visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h1>Where the world builds software</h1>
-      <p>Millions of developers and companies build, ship, and maintain their software on GitHub — the largest and most advanced development platform in the world.</p>
-      <a href="#" class="cta">Get started for free</a>
-    </div>
-  </section>
+  <header>
+    <h1>Marketing Magic</h1>
+    <p>Grow your brand with an unforgettable digital presence.</p>
+    <a href="#contact">Get Started</a>
+  </header>
 
-  <!-- Features Section -->
-  <section class="features">
-    <div class="container">
-      <h2>Everything you need to build</h2>
-      <div class="grid">
-        <div class="feature-card">
-          <h3>Collaboration</h3>
-          <p>Code together with pull requests, issues, and project boards.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Automation</h3>
-          <p>Automate your workflow with GitHub Actions.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Security</h3>
-          <p>Secure code from start to ship with built-in vulnerability scanning.</p>
-        </div>
+  <section>
+    <h2 style="text-align: center; margin-bottom: 40px;">What We Offer</h2>
+    <div class="features">
+      <div class="feature" data-fade>
+        <h3>SEO Optimization</h3>
+        <p>Boost your search engine visibility and rank higher on Google effortlessly.</p>
+      </div>
+      <div class="feature" data-fade>
+        <h3>Social Media</h3>
+        <p>Engage your audience across platforms with stunning, share-worthy content.</p>
+      </div>
+      <div class="feature" data-fade>
+        <h3>Email Campaigns</h3>
+        <p>Drive conversions with beautifully designed and personalized email sequences.</p>
       </div>
     </div>
   </section>
 
-  <!-- Collaboration Section -->
-  <section class="collaboration">
-    <div class="container">
-      <h2>Built for teams of all sizes</h2>
-      <p>Whether you're a startup or an enterprise, GitHub empowers teams to work faster and smarter together.</p>
-      <img src="team-collaboration.svg" alt="Team working illustration"/>
+  <section>
+    <h2 style="text-align: center; margin-bottom: 40px;">Testimonials</h2>
+    <div class="testimonials" data-fade>
+      <p>"This team transformed our online presence. We doubled our leads in two months!"</p>
+      <p class="testimonial-author">— Jamie L., Startup Founder</p>
+    </div>
+    <div class="testimonials" data-fade>
+      <p>"Incredible service and stunning results. Highly recommended."</p>
+      <p class="testimonial-author">— Sarah D., Marketing Director</p>
     </div>
   </section>
 
-  <!-- Integrations Section -->
-  <section class="integrations">
-    <div class="container">
-      <h2>Works with your tools</h2>
-      <p>Connect GitHub with the apps and services your team already uses — Slack, Jira, VS Code, and thousands more.</p>
-    </div>
+  <section id="contact">
+    <h2 style="text-align: center; margin-bottom: 30px;">Contact Us</h2>
+    <form data-fade>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
-  <!-- Pricing Section -->
-  <section class="pricing">
-    <div class="container">
-      <h2>Choose your plan</h2>
-      <div class="pricing-options">
-        <div class="plan">
-          <h3>Free</h3>
-          <p>For individuals and hobbyists</p>
-          <p class="price">$0/month</p>
-        </div>
-        <div class="plan">
-          <h3>Team</h3>
-          <p>Advanced collaboration for teams</p>
-          <p class="price">$4/user/month</p>
-        </div>
-        <div class="plan">
-          <h3>Enterprise</h3>
-          <p>Security and compliance at scale</p>
-          <p class="price">Custom</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Call to Action -->
-  <section class="cta-section">
-    <div class="container">
-      <h2>Join millions of developers on GitHub</h2>
-      <a href="#" class="cta">Sign up for free</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
   <footer>
-    <div class="container">
-      <p>© 2025 GitHub, Inc.</p>
-    </div>
+    &copy; 2025 Marketing Magic. All rights reserved.
   </footer>
 
+  <script>
+    // Fade-in animation on scroll
+    const faders = document.querySelectorAll('[data-fade]');
+    const options = { threshold: 0.1 };
+
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+
+    faders.forEach(fader => appearOnScroll.observe(fader));
+  </script>
 </body>
 </html>
+
